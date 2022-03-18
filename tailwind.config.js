@@ -9,7 +9,14 @@ module.exports = {
     './src/index.js',
   ],
   theme: {
-    extend: {},
+
+    extend: {
+      colors: {
+        cutlets_red: '#FE3E2E',
+        cutlets_green: '#8BC9C8',
+        // ...
+      },
+    },
   },
   plugins: [],
 }
