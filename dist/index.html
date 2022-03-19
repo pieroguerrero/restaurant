@@ -9,21 +9,23 @@
 
 </head>
 
-<body class="body-root h-full font-['Montserrat'] flex flex-col items-center justify-center  py-7 p-7 gap-11">
-    <header class="w-full flex flex-col md:flex-row  md:justify-between">
+<body class="body-root h-full font-['Montserrat'] flex flex-col items-center justify-center gap-11">
+    <header class="w-full pt-7 px-7 flex flex-col md:flex-row  md:justify-between">
         <div id="logo">
             <input class="w-auto md:w-[250px]" type="image" src="" alt="logo">
         </div>
         <div id="menu">
-            <ul class="flex items-center justify-center gap-6 text-base font-bold tracking-widest cursor-pointer">
-                <li class="menu-link py-1 px-2">MENUS</li>
-                <li class="menu-link py-1 px-2">SOURCING</li>
-                <li class="menu-link py-1 px-2">CREDO</li>
-                <li class="bg-cutlets_red py-3 px-6">ORDER ONLINE</li>
+            <ul class="flex items-center justify-center gap-6 text-sm font-bold tracking-widest cursor-pointer">
+                <li><a class="menu-link py-1 px-2" href="">MENUS</a></li>
+                <li><a class="menu-link py-1 px-2" href="">SOURCING</a></li>
+                <li><a class="menu-link py-1 px-2" href="">CREDO</a></li>
+                <li><button id="btn-order-online"
+                        class="menu-link text-sm font-bold tracking-widest bg-cutlets_red py-3 px-6">ORDER
+                        ONLINE</button> </li>
             </ul>
         </div>
     </header>
-    <main class="flex-1">
+    <main class="flex-1 pb-7 px-7 ">
         <div id="main-menu">
             <div class="presentation flex flex-col gap-10 items-center justify-center">
                 <p id="main-menu-title" before="empty"
@@ -212,7 +214,18 @@
         </div>
 
     </main>
-    <footer>
+    <footer class="w-full fixed bottom-0 left-0 right-0">
+        <!-- fixed bottom-0 left-0 right-0 -->
+        <div class="flex items-center justify-center pt-3 pb-2 bg-cutlets_red ">
+            <button class="bg-cutlets_green text-sm font-bold tracking-widest py-3 px-6">EMAIL SIGNUP</button>
+        </div>
+        <div class="flex items-center justify-center gap-3 text-black p-3 text-sm bg-cutlets_red">
+            <span>Created by <strong><a id="link-footer" href="https://github.com/pieroguerrero">pieroguerrero</a>
+                </strong></span>
+            <a href="https://github.com/pieroguerrero">
+                <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+            </a>
+        </div>
     </footer>
     <script src="./bundle.js"></script>
 </body>

@@ -19,7 +19,23 @@
     left: 0;
     right: auto;
     margin: auto;
-    transform: translate(-1.5rem, 0rem)
+    transform: translate(-1.5rem, 0rem);
+}
+
+button, a {
+    transition: 0.3s;
+
+    /* transition: transform .2s; */
+}
+
+button:hover, button:focus {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.menu-link:hover, .menu-link:focus {
+
+    box-shadow: inset 0 0 0 2em #8BC9C8;
 }
 
 .creations li {
