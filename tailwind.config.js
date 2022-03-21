@@ -14,7 +14,7 @@ module.exports = {
 
     extend: {
       colors: {
-        cutlets_red: '#02198B',//'#FE3E2E',
+        cutlets_red: '#FE3E2E',
         cutlets_green: '#8BC9C8',
         cutlets_gray: "#EBE5E3",
         // ...

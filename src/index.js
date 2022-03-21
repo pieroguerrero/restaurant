@@ -17,7 +17,7 @@ root.style.setProperty('--urlimage', "url('" + pngTitleIcon + "')");
 
 //#region landing
 import jpgLandingPic1_1 from './img/main-pics1/07J1fXvYTai8GPWFtdaK_DSC09739.jpg';
-import jpgLandingPic1_2 from './img/main-pics1/07J1fXvYTai8GPWFtdaK_DSC09739.jpg';
+import jpgLandingPic1_2 from './img/main-pics1/22165DSC04884.jpg';
 import pngLandingTextImg from './img/landing-text-img.png';
 import pngEmblem from './img/emblem.png';
 import jpgLandingPics2_1 from './img/main-pics2/58093DSC05149.jpg';
@@ -49,11 +49,18 @@ carousel();
 
 
 const arrLandingPic1 = document.querySelectorAll("#landin-pics1 .mySlides");
-arrLandingPic1[0].setAttribute("src", jpgLandingPic1_1);
-arrLandingPic1[1].setAttribute("src", jpgLandingPic1_2);
-arrLandingPic1[2].setAttribute("src", jpgLandingPics2_1);
+// arrLandingPic1[0].setAttribute("src", jpgLandingPic1_1);
+// arrLandingPic1[1].setAttribute("src", jpgLandingPic1_2);
+// arrLandingPic1[2].setAttribute("src", jpgLandingPics2_1);
 
+arrLandingPic1[1].style.backgroundImage = "url('" + jpgLandingPic1_1 + "')";
+//arrLandingPic1[1].style.backgroundPosition = "center top -300px";
 
+arrLandingPic1[0].style.backgroundImage = "url('" + jpgLandingPic1_2 + "')";
+//arrLandingPic1[0].style.backgroundPosition = "center top -300px";
+
+arrLandingPic1[2].style.backgroundImage = "url('" + jpgLandingPics2_1 + "')";
+//arrLandingPic1[2].style.backgroundPosition = "center top -300px";
 
 const imgLandingTextImg = document.querySelector("#landing-text img");
 imgLandingTextImg.setAttribute("src", pngLandingTextImg);
