@@ -1,5 +1,6 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+//const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 
 module.exports = {
     mode: "development",
@@ -15,24 +16,31 @@ module.exports = {
         rules: [
             {
                 test: /\.css$/,
-                // use: [
-                //     MiniCssExtractPlugin.loader,
-                //     { loader: "css-loader", options: { importLoaders: 1 } },
-                //     "postcss-loader",
-                // ],
                 use: [
                     "style-loader",
                     { loader: "css-loader", options: { importLoaders: 1 } },
                     "postcss-loader",
                 ],
             },
-            {
-                test: /\.(png|svg|jpg|jpeg|gif)$/i,
-                type: 'asset/resource',
-            },
+            // {
+            //     test: /\.(png|svg|jpg|jpeg|gif)$/i,
+            //     type: 'asset/resource',
+            // },
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/i,
                 type: 'asset/resource',
+            },
+            // {
+            //     test: /\.(jpe?g|png|gif|svg)$/i,
+            //     type: "asset",
+            // },
+            {
+                test: /\.(png|jpe?g|webp|git|svg|)$/i,
+                use: [
+                    {
+                        loader: 'img-optimize-loader',
+                    },
+                ],
             },
         ],
     },
@@ -42,4 +50,24 @@ module.exports = {
         port: 9000,
         compress: true,
     },
+
+    // optimization: {
+    //     minimizer: [
+    //         "...",
+    //         new ImageMinimizerPlugin({
+    //             minimizer: {
+    //                 implementation: ImageMinimizerPlugin.imageminMinify,
+    //                 options: {
+    //                     // Lossless optimization with custom option
+    //                     // Feel free to experiment with options for better result for you
+    //                     plugins: [
+    //                         ["gifsicle", { interlaced: true }],
+    //                         ["jpegtran", { progressive: true }],
+    //                         ["optipng", { optimizationLevel: 5 }],
+    //                     ],
+    //                 },
+    //             },
+    //         }),
+    //     ],
+    // },
 };

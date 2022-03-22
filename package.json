@@ -22,6 +22,12 @@
   "devDependencies": {
     "autoprefixer": "^10.4.4",
     "css-loader": "^6.7.1",
+    "image-minimizer-webpack-plugin": "^3.2.3",
+    "imagemin": "^8.0.1",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-jpegtran": "^7.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "img-optimize-loader": "^1.0.7",
     "postcss": "^8.4.12",
     "postcss-cli": "^9.1.0",
     "postcss-loader": "^6.2.1",
