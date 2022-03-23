@@ -10,15 +10,17 @@
 </head>
 
 <body class="body-root h-full font-['Montserrat'] flex flex-col items-center justify-center">
-    <header class="w-full pt-7 px-7 flex flex-col md:flex-row   md:justify-between bg-cutlets_gray">
-        <div id="logo">
-            <input class="w-auto md:w-[250px]" type="image" src="" alt="logo">
+    <header
+        class="w-full pt-7 px-7 flex flex-col gap-5 sm:gap-0  items-center sm:flex-row justify-center  sm:justify-between bg-cutlets_gray">
+        <div id="logo" class="flex justify-center items-center">
+            <input id="logo-img" class="w-[60%] sm:w-[250px]" type="image" src="" alt="logo">
         </div>
         <div id="menu">
-            <ul class="flex items-center justify-center gap-6 text-sm font-bold tracking-widest cursor-pointer">
-                <li><a class="menu-link py-1 px-2" href="">MENUS</a></li>
-                <li><a class="menu-link py-1 px-2" href="">SOURCING</a></li>
-                <li><a class="menu-link py-1 px-2" href="">CREDO</a></li>
+            <ul
+                class="flex items-center justify-center text-xs sm:gap-6 sm:text-sm font-bold tracking-widest cursor-pointer">
+                <li><a id="link-option-menu" class="menu-link py-1 px-2">MENUS</a></li>
+                <li><a class="menu-link py-1 px-2">SOURCING</a></li>
+                <li><a class="menu-link py-1 px-2">CREDO</a></li>
                 <li><button id="btn-order-online"
                         class="menu-link text-sm font-bold tracking-widest bg-cutlets_red py-3 px-6">ORDER
                         ONLINE</button> </li>
@@ -27,18 +29,25 @@
     </header>
     <main class="pb-7">
         <div id="landing"
-            class="w-full grid grid-cols-1 grid-rows-[1fr_1.1fr_0.7fr_1.5fr_0.70fr] bg-cutlets_gray  pb-24 pt-11">
+            class="w-full grid grid-cols-1 grid-rows-[0.7fr_1.45fr_0.7fr_1.5fr_0.70fr] sm:grid-rows-[1fr_1.1fr_0.7fr_1.5fr_0.70fr] bg-cutlets_gray  pb-24 pt-11">
             <div id="landin-pics1" class="w-full row-start-1 row-end-2 overflow-hidden">
 
-                <div class="mySlides bg-no-repeat h-full w-full bg-cover lg:bg-[center_top_-380px] bg-fixed"></div>
-                <div class="mySlides bg-no-repeat h-full w-full bg-cover lg:bg-[center_top_-380px] bg-fixed"></div>
-                <div class="mySlides bg-no-repeat h-full w-full bg-cover lg:bg-[center_top_-380px] bg-fixed"></div>
+                <div
+                    class="mySlides bg-no-repeat h-full w-full bg-cover bg-[center_top] lg:bg-[center_top_-380px] bg-fixed">
+                </div>
+                <div
+                    class="mySlides bg-no-repeat h-full w-full bg-cover bg-[center_top] lg:bg-[center_top_-380px] bg-fixed">
+                </div>
+                <div
+                    class="mySlides bg-no-repeat h-full w-full bg-cover bg-[center_top] lg:bg-[center_top_-380px] bg-fixed">
+                </div>
 
             </div>
             <div id="landing-text"
-                class="row-start-2 row-end-3 flex justify-around items-center gap-[10%] bg-cutlets_red px-[10%] relative">
+                class="row-start-2 row-end-3 flex flex-col sm:flex-row justify-center sm:justify-around items-center gap-12 sm:gap-[10%] bg-cutlets_red px-[10%] relative">
                 <img src="" alt="">
-                <p class="text-lg font-semibold tracking-wide">The fabric of Cutlets was born out of love and respect
+                <p class="text-base sm:text-lg font-semibold tracking-wide">The fabric of Cutlets was born out of love
+                    and respect
                     for
                     these humble deli creations, met
                     with a
@@ -52,10 +61,17 @@
                 <img class="img-pics2 object-fill h-full" src="" alt="">
                 <img class="img-pics2 object-fill h-full" src="" alt="">
             </div>
-            <div id="landing-menu" class="row-start-4 row-end-5 mt-16 flex flex-col justify-center">
-                <div class="px-8">
-                    <div id="landing-menu-text"
-                        class="relative flex flex-col justify-center items-start bg-cutlets_red pl-12 py-[11%] pr-[20%] w-[50%] h-[65vh] before:shadow-lg sm:before:left-[80%] sm:before:top-[-15%]  lg:before:top-[-20%]">
+            <div id="landing-menu"
+                class="row-start-4 row-end-5 mt-10 sm:mt-16 flex flex-col justify-start sm:justify-center">
+                <div class="px-8 pt-8 sm:pt-0">
+                    <div id="landing-menu-text" class="relative 
+                        flex flex-col justify-center items-center sm:items-start bg-cutlets_red 
+                        pl-12 py-[11%] pr-[20%] 
+                        w-[90%] sm:w-[50%] h-[45vh] sm:h-[65vh] 
+                        before:shadow-lg 
+                        before:left-[15%] before:top-[90%]
+                        sm:before:left-[80%] sm:before:top-[-15%]  lg:before:top-[-20%]
+                        before:w-full before:h-[40vh] sm:before:h-[65vh]">
                         <p class="text-5xl font-black tracking-wider underline underline-offset-4 decoration-8 mb-9">
                             MENUS
                         </p>
@@ -75,7 +91,7 @@
             </div>
             <!-- <div id="landing-pics3"></div> -->
         </div>
-        <div id="main-menu" class="hidden px-7">
+        <div id="main-menu" class="hidden px-7 pt-20">
             <div class="presentation flex flex-col gap-10 items-center justify-center">
                 <p id="main-menu-title" before="empty"
                     class="title relative w-[392px] text-[3.5rem] bg-[#F7E9E1] flex justify-center font-extrabold tracking-wide">
