@@ -14,12 +14,12 @@
     background-image: var(--urlimage);
     content: '';
     background-size: contain;
-    width: 80px;
+    /* width: 80px;
     height: 148px;
     top: 0;
     bottom: 0;
     left: 0;
-    right: auto;
+    right: auto; */
     margin: auto;
     transform: translate(-1.5rem, 0rem);
 }
