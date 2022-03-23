@@ -22,7 +22,7 @@ module.exports = {
                     "postcss-loader",
                 ],
             },
-            // {
+            // {//this is the original image loader without optimization
             //     test: /\.(png|svg|jpg|jpeg|gif)$/i,
             //     type: 'asset/resource',
             // },

@@ -5,8 +5,25 @@ const root = document.querySelector(':root');
 //#region header
 import pngLogo from './img/logo.png';
 
-const imgLogo = document.querySelector("#logo input[type='image']");
+
+function onClick_ImageLogo() {
+    const divMainMenu = document.getElementById("main-menu");
+    const divLanding = document.getElementById("landing");
+    const header = document.querySelector("header");
+
+    divLanding.classList.remove("hidden");
+    header.classList.add("bg-cutlets_gray");
+    divMainMenu.classList.add("hidden");
+
+    const linkLandingMenu = document.getElementById("link-option-menu");
+    linkLandingMenu.classList.remove("bg-cutlets_green");
+}
+
+const imgLogo = document.getElementById("logo-img");
 imgLogo.setAttribute("src", pngLogo);
+
+imgLogo.onclick = onClick_ImageLogo;
+
 //#endregion header
 
 //#region menu
@@ -49,18 +66,9 @@ carousel();
 
 
 const arrLandingPic1 = document.querySelectorAll("#landin-pics1 .mySlides");
-// arrLandingPic1[0].setAttribute("src", jpgLandingPic1_1);
-// arrLandingPic1[1].setAttribute("src", jpgLandingPic1_2);
-// arrLandingPic1[2].setAttribute("src", jpgLandingPics2_1);
-
 arrLandingPic1[1].style.backgroundImage = "url('" + jpgLandingPic1_1 + "')";
-//arrLandingPic1[1].style.backgroundPosition = "center top -300px";
-
 arrLandingPic1[0].style.backgroundImage = "url('" + jpgLandingPic1_2 + "')";
-//arrLandingPic1[0].style.backgroundPosition = "center top -300px";
-
 arrLandingPic1[2].style.backgroundImage = "url('" + jpgLandingPics2_1 + "')";
-//arrLandingPic1[2].style.backgroundPosition = "center top -300px";
 
 const imgLandingTextImg = document.querySelector("#landing-text img");
 imgLandingTextImg.setAttribute("src", pngLandingTextImg);
@@ -82,6 +90,29 @@ divLandingMenu.style.backgroundSize = "600px";
 
 const imgLandingIcons = document.querySelector("#landing-icons img");
 imgLandingIcons.setAttribute("src", pngLandingIcons);
+
+function onClick_LinkMenuLanding() {
+
+    const divMainMenu = document.getElementById("main-menu");
+    const divLanding = document.getElementById("landing");
+    const header = document.querySelector("header");
+
+    divMainMenu.classList.remove("hidden");
+    divLanding.classList.add("hidden");
+    header.classList.remove("bg-cutlets_gray");
+
+    this.classList.add("bg-cutlets_green");
+
+}
+
+const linkLandingMenu = document.getElementById("link-option-menu");
+linkLandingMenu.onclick = onClick_LinkMenuLanding.bind(linkLandingMenu);
+
+const btnLandingMenu = document.getElementById("btn-landin-menu");
+btnLandingMenu.onclick = onClick_LinkMenuLanding.bind(linkLandingMenu);
+
+
+
 
 //#endregion landing
 
