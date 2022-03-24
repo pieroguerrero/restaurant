@@ -29,7 +29,41 @@ imgLogo.onclick = onClick_ImageLogo;
 //#region menu
 import pngTitleIcon from './img/title-icon.png';
 
+function toggleMainMenuPanels(btnToHide, divToShow, divToHide) {
+
+    if (!this.classList.contains("button-selected")) {
+
+        this.classList.add("button-selected");
+    }
+
+    if (btnToHide.classList.contains("button-selected")) {
+
+        btnToHide.classList.remove("button-selected");
+    }
+
+    if (divToShow.classList.contains("hidden")) {
+
+        divToShow.classList.remove("hidden");
+    }
+
+    if (!divToHide.classList.contains("hidden")) {
+
+        divToHide.classList.add("hidden");
+    }
+
+
+}
+
 root.style.setProperty('--urlimage', "url('" + pngTitleIcon + "')");
+
+const btnMainMenu = document.querySelector("#btn-main-menu");
+const btnAddItems = document.querySelector("#btn-add-items");
+
+const divMainMenu = document.querySelector("#main-menu .content");
+const divAddItems = document.querySelector("#main-menu .add-items");
+
+btnMainMenu.onclick = toggleMainMenuPanels.bind(btnMainMenu, btnAddItems, divMainMenu, divAddItems);
+btnAddItems.onclick = toggleMainMenuPanels.bind(btnAddItems, btnMainMenu, divAddItems, divMainMenu);
 //#endregion menu
 
 //#region landing
