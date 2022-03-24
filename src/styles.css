@@ -14,12 +14,6 @@
     background-image: var(--urlimage);
     content: '';
     background-size: contain;
-    /* width: 80px;
-    height: 148px;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: auto; */
     margin: auto;
     transform: translate(-1.5rem, 0rem);
 }
@@ -51,6 +45,34 @@
     /* transform: translate(-1.5rem, 0rem); */
 }
 
+.add-items-card {
+    @apply text-cutlets_red;
+}
+
+.add-items-card .add-items-card-title {
+    @apply flex justify-center items-center mb-5 relative;
+}
+
+.add-items-card .add-items-card-title>p {
+    @apply bg-white px-4 mb-0 text-4xl font-extrabold tracking-wide;
+}
+
+.add-items-card .add-items-card-list {
+    @apply flex flex-col gap-2 w-full;
+}
+
+.add-items-card .add-items-card-list li>p:nth-child(odd) {
+    @apply tracking-wide font-extrabold;
+}
+
+.add-items-card .add-items-card-list li>p:nth-child(even) {
+    @apply tracking-wide;
+}
+
+
+
+
+
 button, a {
     transition: 0.3s;
 
@@ -66,6 +88,15 @@ button:hover, button:focus {
 
     box-shadow: inset 0 0 0 2em #8BC9C8;
 }
+
+
+
+
+
+
+
+
+
 
 .creations li {
     @apply flex gap-5;

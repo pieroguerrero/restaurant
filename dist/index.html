@@ -16,13 +16,15 @@
             <input id="logo-img" class="w-[60%] sm:w-[250px]" type="image" src="" alt="logo">
         </div>
         <div id="menu">
-            <ul
-                class="flex items-center justify-center text- sm:gap-6 text-xs sm:text-sm font-bold tracking-widest cursor-pointer">
+            <ul class="flex items-center justify-around sm:justify-center 
+                sm:gap-6 
+                text-xs sm:text-sm font-semibold sm:font-bold tracking-widest 
+                cursor-pointer">
                 <li><a id="link-option-menu" class="menu-link py-1 px-2">MENUS</a></li>
                 <li><a class="menu-link py-1 px-2">SOURCING</a></li>
-                <li><a class="menu-link py-1 px-2">CREDO</a></li>
+                <!-- <li><a class="menu-link py-1 px-2">CREDO</a></li> -->
                 <li><button id="btn-order-online"
-                        class="menu-link text-sm font-bold tracking-widest bg-cutlets_red py-3 px-6">ORDER
+                        class="menu-link text-sm font-semibold sm:font-bold tracking-widest bg-cutlets_red py-2 px-4 sm:py-3 sm:px-6">ORDER
                         ONLINE</button> </li>
             </ul>
         </div>
@@ -291,7 +293,220 @@
                         </li>
                     </ul>
                 </div>
-
+            </div>
+            <div class="add-items
+            grid grid-rows-[repeat(5,_fit-content)] pb-[100px] sm:pb-0 sm:grid-cols-2 sm:grid-rows-[fit-content_fit-content_min-content_fit-content_fit-content]
+            gap-16 gap-y-9 sm:px-6 md:px-[7%]">
+                <div class="add-items-card item-breads 
+                            sm:row-start-1 sm:row-end-2 sm:col-start-1 sm:col-end-2">
+                    <div class="add-items-card-title 
+                    before:absolute before:block
+                    before:bg-cutlets_red
+                    before:w-full before:h-[2px]
+                    before:top-0 before:bottom-0 before:left-0 before:right-0
+                    before:m-auto
+                    before:z-[-1]">
+                        <p>BREADS</p>
+                    </div>
+                    <ul class="add-items-card-list">
+                        <li>
+                            <p class="tracking-wide font-extrabold">ROLL</p>
+                            <p class="tracking-wide">Seeded or Unseeded.</p>
+                        </li>
+                        <li>
+                            <p class="tracking-wide font-extrabold">HERO (HOAGIE. WEDGE. SUB.)</p>
+                            <p class="tracking-wide">Seeded or Unseeded.</p>
+                        </li>
+                        <li>
+                            <p class="tracking-wide font-extrabold">WHOLE WHEAT HERO</p>
+                        </li>
+                        <li>
+                            <p class="tracking-wide font-extrabold">WHOLE WHEAT WRAP</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="add-items-card
+                            sm:row-start-1 sm:row-end-4 sm:col-start-2 sm:col-end-3">
+                    <div class="add-items-card-title 
+                    before:absolute before:block
+                    before:bg-cutlets_red
+                    before:w-full before:h-[2px]
+                    before:top-0 before:bottom-0 before:left-0 before:right-0
+                    before:m-auto
+                    before:z-[-1]">
+                        <p>SAUCES</p>
+                    </div>
+                    <ul class="add-items-card-list">
+                        <li>
+                            <p>CUTLETS' BUFFALO SAUCE</p>
+                        </li>
+                        <li>
+                            <p>CUTLETS’ BASIL PESTO</p>
+                        </li>
+                        <li>
+                            <p>CUTLETS' SPICY MAYO</p>
+                        </li>
+                        <li>
+                            <p>CUTLETS' BALSAMIC VINEAGRETTE</p>
+                        </li>
+                        <li>
+                            <p>CUTLETS' CEASAR DRESSING</p>
+                        </li>
+                        <li>
+                            <p>CUTLETS' BUFFALO SAUCE</p>
+                        </li>
+                        <li>
+                            <p>MAYO</p>
+                        </li>
+                        <li>
+                            <p>DIJON MUSTARD</p>
+                        </li>
+                        <li>
+                            <p>HONEY MUSTARD</p>
+                        </li>
+                        <li>
+                            <p>SPICY BROWN MUSTARD</p>
+                        </li>
+                        <li>
+                            <p>RANCH</p>
+                        </li>
+                        <li>
+                            <p>MARINARA SAUCE</p>
+                        </li>
+                        <li>
+                            <p>AGED BALSAMIC VINEGAR</p>
+                        </li>
+                        <li>
+                            <p>IMPORTED RED WINE VINEGAR</p>
+                        </li>
+                        <li>
+                            <p>EXTRA VIRGIN OLIVE OIL</p>
+                        </li>
+                        <li>
+                            <p>TUTTO'S CALABRIAN CRUSHED PEPPER SREAD</p>
+                        </li>
+                        <li>
+                            <p>BONE SUCKIN’ BBQ SAUCE</p>
+                        </li>
+                        <li>
+                            <p>MALDON SALT</p>
+                        </li>
+                        <li>
+                            <p>CRACKED BLACK PEPPER</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="add-items-card
+                            sm:row-start-2 sm:row-end-3 sm:col-start-1 sm:col-end-2">
+                    <div class="add-items-card-title 
+                    before:absolute before:block
+                    before:bg-cutlets_red
+                    before:w-full before:h-[2px]
+                    before:top-0 before:bottom-0 before:left-0 before:right-0
+                    before:m-auto
+                    before:z-[-1]">
+                        <p>CHEESE</p>
+                    </div>
+                    <ul class="add-items-card-list">
+                        <li>
+                            <p>WHITE CHEDDAR</p>
+                            <p>(Belgioso, Wisconsin)</p>
+                        </li>
+                        <li>
+                            <p>IMPORTED SHARP PROVOLONE</p>
+                            <p>(Sorensina Picante, Italy)</p>
+                        </li>
+                        <li>
+                            <p>FRESH MOZZARELLA</p>
+                            <p>(Lioni Latticini, New Jersey)</p>
+                        </li>
+                        <li>
+                            <p>SHAVED PARMESAN</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="add-items-card
+                            sm:row-start-3 sm:row-end-6 sm:col-start-1 sm:col-end-2">
+                    <div class="add-items-card-title 
+                    before:absolute before:block
+                    before:bg-cutlets_red
+                    before:w-full before:h-[2px]
+                    before:top-0 before:bottom-0 before:left-0 before:right-0
+                    before:m-auto
+                    before:z-[-1]">
+                        <p>TOPPINGS</p>
+                    </div>
+                    <ul class="add-items-card-list">
+                        <li>
+                            <p>SHREDDED ICEBERG LETTUCE</p>
+                        </li>
+                        <li>
+                            <p>ARUGULA</p>
+                        </li>
+                        <li>
+                            <p>BEEFSTEAK TOMATO</p>
+                        </li>
+                        <li>
+                            <p>RED ONION</p>
+                        </li>
+                        <li>
+                            <p>SOUR PICKLE</p>
+                        </li>
+                        <li>
+                            <p>CUCUMBER</p>
+                        </li>
+                        <li>
+                            <p>BANANA PEPPERS</p>
+                        </li>
+                        <li>
+                            <p>FRESH BASIL</p>
+                        </li>
+                        <li>
+                            <p>ROASTED RED PEPPERS</p>
+                            <p>+ 1.50</p>
+                        </li>
+                        <li>
+                            <p>AVOCADO</p>
+                            <p>+ 1.50</p>
+                        </li>
+                        <li>
+                            <p>BROCCOLI RABE</p>
+                            <p>+ 1.50</p>
+                        </li>
+                        <li>
+                            <p>EGGPLANT CUTLET</p>
+                            <p>+ 1.50</p>
+                        </li>
+                        <li>
+                            <p>THICK CUT BACON</p>
+                            <p>+ 1.50</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="add-items-card
+                sm:row-start-4 sm:row-end-6 sm:col-start-2 sm:col-end-3">
+                    <div class="add-items-card-title 
+                    before:absolute before:block
+                    before:bg-cutlets_red
+                    before:w-full before:h-[2px]
+                    before:top-0 before:bottom-0 before:left-0 before:right-0
+                    before:m-auto
+                    before:z-[-1]">
+                        <p>SIDES</p>
+                    </div>
+                    <ul class="add-items-card-list">
+                        <ul>
+                            <li>
+                                <p>CAPE COD CHIPS</p>
+                                <p>+ 1.99</p>
+                            </li>
+                            <li>
+                                <p>HALF SOUR PICKLE</p>
+                                <p>+ 0.99</p>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
             </div>
         </div>
 
